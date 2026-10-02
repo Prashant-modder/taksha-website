@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Taksha</title>
+<meta name="description" content="Get in touch with Taksha." />
+<link rel="icon" href="assets/img/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
 
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav-brand">
+    <img src="assets/img/logo.png" alt="Taksha" class="nav-logo" onerror="this.style.display='none'" />
+    <span class="nav-name">TAKSHA</span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="page-header-inner">
+      <span class="page-kicker">// Open inbox</span>
+      <h1 class="page-title">Say <span class="grad-2">hello</span>.</h1>
+      <p class="page-lede">
+        Questions, feedback, or just curious about what's coming — reach out anytime.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact-inner">
+
+      <a href="mailto:Zirconium4.1@gmail.com" class="contact-card reveal">
+        <div class="contact-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-11Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="m3.5 6.5 8.5 6.5 8.5-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="contact-body">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">Zirconium4.1@gmail.com</span>
+          <span class="contact-hint">Best for: general questions, feedback, anything else</span>
+        </div>
+        <div class="contact-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </a>
+
+      <div class="contact-note reveal">
+        <p>
+          We read everything. Replies usually land within a day or two —
+          sometimes faster if the message is interesting.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-strip">
+    <div class="cta-inner">
+      <h2>Not sure what to write?</h2>
+      <p>"Hi, I saw taksha.pro — tell me more" is a perfectly good first message.</p>
+      <a href="mailto:Zirconium4.1@gmail.com?subject=Hello%20Taksha" class="btn btn-primary">
+        <span>Open email</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/logo.png" alt="Taksha" onerror="this.style.display='none'" />
+      <span>TAKSHA</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Taksha. A Cryonix Labs project.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

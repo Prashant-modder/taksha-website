@@ -535,6 +535,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   #constellation { opacity: 0.55; }
 }
 
+.nav-logo {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 9px;   /* soft rounded corners */
+  /* optional: subtle glow to match cubes */
+  box-shadow: 0 0 12px rgba(0,194,255,0.35);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding: 120px 28px 60px; min-height: auto; }

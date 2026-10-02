@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Products — Taksha</title>
+<meta name="description" content="Software from Taksha. No ads. No bloat." />
+<link rel="icon" href="assets/img/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
 
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav-brand">
+    <img src="assets/img/logo.png" alt="Taksha" class="nav-logo" onerror="this.style.display='none'" />
+    <span class="nav-name">TAKSHA</span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="page-header-inner">
+      <span class="page-kicker">// Software catalog</span>
+      <h1 class="page-title">What we're <span class="grad-2">building</span>.</h1>
+      <p class="page-lede">
+        Few products. Deep focus. Each one earns its place before it ships.
+      </p>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="products-inner">
+
+      <article class="product-card product-locked reveal" id="meritbitsCard">
+        <div class="product-glow" aria-hidden="true"></div>
+        <div class="product-badge">
+          <span class="pulse-dot"></span> Signal detected · <span class="mono">/MB-1.0</span>
+        </div>
+
+        <div class="product-icon-wrap">
+          <img src="assets/img/meritbits.png" alt="MeritBits" class="product-icon" onerror="this.style.display='none'" />
+          <div class="product-icon-fallback mono" id="mbScramble">M###B##S</div>
+        </div>
+
+        <h2 class="product-name">
+          <span class="mono">MERITBITS</span>
+        </h2>
+
+        <p class="product-tag">
+          A digital classroom credit and behaviour-tracking system.
+          <br /><span class="dim">Currently in development.</span>
+        </p>
+
+        <div class="product-meta">
+          <div class="product-meta-row"><span>STATUS</span><em class="amber">IN DEVELOPMENT</em></div>
+          <div class="product-meta-row"><span>PLATFORM</span><em>Multi-platform</em></div>
+          <div class="product-meta-row"><span>RELEASE</span><em class="mono">█████</em></div>
+          <div class="product-meta-row"><span>PRICING</span><em>Few honest premiums</em></div>
+        </div>
+
+        <div class="product-progress">
+          <div class="product-progress-bar" id="mbProgress"></div>
+        </div>
+        <p class="product-hint mono">// Decrypting product signature…</p>
+
+        <div class="product-footer">
+          <span class="lock-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <rect x="4" y="10" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <span>Not yet available. Details will unlock at launch.</span>
+        </div>
+      </article>
+
+      <div class="products-coming reveal">
+        <div class="coming-inner">
+          <span class="mono">// MORE SIGNALS INCOMING</span>
+          <p>Taksha isn't a one-app studio. New products will surface here as they're ready.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-strip">
+    <div class="cta-inner">
+      <h2>Want to be notified?</h2>
+      <p>Drop a line and we'll remember you when MeritBits drops.</p>
+      <a href="contact.html" class="btn btn-primary">
+        <span>Stay in touch</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/logo.png" alt="Taksha" onerror="this.style.display='none'" />
+      <span>TAKSHA</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Taksha. A Cryonix Labs project.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

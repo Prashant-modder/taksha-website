@@ -523,6 +523,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 
+/* ---------- Constellation canvas ---------- */
+#constellation {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.85;
+}
+@media (max-width: 640px) {
+  #constellation { opacity: 0.55; }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding: 120px 28px 60px; min-height: auto; }

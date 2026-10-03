@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MeritBits — Classroom merit tracking by Taksha</title>
+<meta name="description" content="MeritBits is a digital classroom credit and behaviour-tracking system for teachers and parents. Built by Taksha." />
+<link rel="icon" href="/assets/img/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+
+<header class="nav" id="nav">
+  <a href="/index.html" class="nav-brand">
+    <img src="/assets/img/logo.png" alt="Taksha" class="nav-logo" onerror="this.style.display='none'" />
+    <span class="nav-name">TAKSHA</span>
+  </a>
+  <nav class="nav-links">
+    <a href="/index.html">Home</a>
+    <a href="/products.html" class="active">Products</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="page-header-inner">
+      <span class="page-kicker">// Product · Android</span>
+      <div class="mb-hero-icon">
+        <img src="/assets/img/meritbits.png" alt="MeritBits" onerror="this.style.display='none'" />
+      </div>
+      <h1 class="page-title mb-title">Merit<span class="grad-2">Bits</span></h1>
+      <p class="page-lede">
+        A digital classroom credit and behaviour-tracking system for teachers, parents, and administrators.
+      </p>
+      <div class="mb-status">
+        <span class="pulse-dot"></span> Currently in closed testing on Google Play
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-subnav-wrap">
+    <nav class="mb-subnav">
+      <a href="/products/meritbits/index.html" class="active">Overview</a>
+      <a href="/products/meritbits/features.html">Features</a>
+      <a href="/products/meritbits/download.html">Download</a>
+      <a href="/products/meritbits/privacy.html">Privacy</a>
+      <a href="/products/meritbits/terms.html">Terms</a>
+      <a href="/products/meritbits/delete-account.html">Delete Account</a>
+    </nav>
+  </section>
+
+  <section class="mb-content">
+
+    <div class="mb-block reveal">
+      <div class="mb-block-label">The idea</div>
+      <h2>Discipline is not punishment.</h2>
+      <p class="mb-quote">"It's the currency of self-growth."</p>
+      <p>
+        Every student begins with <strong>5000 Merit</strong>. Teachers deduct points for infractions,
+        parents follow the balance live, and every change is written to an unalterable history.
+        It's not about shaming — it's about showing students that their choices have weight, and
+        that they can see the shape of their own behaviour over time.
+      </p>
+    </div>
+
+    <div class="mb-block reveal">
+      <div class="mb-block-label">Built for</div>
+      <h2>Three roles, one classroom.</h2>
+      <div class="mb-roles">
+        <div class="mb-role">
+          <div class="mb-role-icon">◈</div>
+          <h3>Class teachers</h3>
+          <p>Create classes, add students individually or in bulk, deduct merit, reset the class, and post thoughts. Full control.</p>
+        </div>
+        <div class="mb-role">
+          <div class="mb-role-icon">◆</div>
+          <h3>Subject teachers</h3>
+          <p>Join a class with a 6-character code. Deduct merit and post thoughts — nothing more, nothing less.</p>
+        </div>
+        <div class="mb-role">
+          <div class="mb-role-icon">◇</div>
+          <h3>Parents</h3>
+          <p>Link a child by scanning their private QR. See merit, history, and receive notifications when things change.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-block reveal">
+      <div class="mb-block-label">The core flow</div>
+      <h2>From first class to first deduction.</h2>
+      <ol class="mb-steps">
+        <li><span>01</span><div><strong>Register</strong> as a Teacher or Parent. Verify email. Teachers wait for admin approval.</div></li>
+        <li><span>02</span><div><strong>Create a class</strong> (teacher) or join one with a code (subject teacher).</div></li>
+        <li><span>03</span><div><strong>Add students</strong> one by one or in bulk — name + roll number.</div></li>
+        <li><span>04</span><div><strong>Link a parent</strong> by scanning the student's QR code.</div></li>
+        <li><span>05</span><div><strong>Deduct merit</strong> — pick an infraction, confirm, points come off.</div></li>
+        <li><span>06</span><div><strong>Track</strong> — every change is saved. Parents see history and get notified.</div></li>
+        <li><span>07</span><div><strong>Reset</strong> the class each cycle. Negative balances carry over.</div></li>
+      </ol>
+    </div>
+
+    <div class="mb-block reveal">
+      <div class="mb-block-label">Merit rules</div>
+      <h2>Simple, transparent, tamper-proof.</h2>
+      <div class="mb-rules">
+        <div class="mb-rule"><span>Starting value</span><em>5000 for every new student</em></div>
+        <div class="mb-rule"><span>Deduction</span><em>Points are subtracted — no floor, merit can go negative</em></div>
+        <div class="mb-rule"><span>History</span><em>Every deduction stores reason, points, and server timestamp</em></div>
+        <div class="mb-rule"><span>Reset</span><em>Class teacher only. 5000 + any negative deficit carries over</em></div>
+        <div class="mb-rule"><span>Immutability</span><em>History entries cannot be edited once written</em></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="cta-strip">
+    <div class="cta-inner">
+      <h2>Available on Android.</h2>
+      <p>Currently in closed testing. Platform support, screenshots, and public availability are coming next.</p>
+      <div class="mb-cta-buttons">
+        <a href="/products/meritbits/download.html" class="btn btn-primary">
+          <span>Download info</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="/products/meritbits/features.html" class="btn btn-ghost">See all features</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/assets/img/logo.png" alt="Taksha" onerror="this.style.display='none'" />
+      <span>TAKSHA</span>
+    </div>
+    <div class="footer-links">
+      <a href="/index.html">Home</a>
+      <a href="/products.html">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Taksha. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

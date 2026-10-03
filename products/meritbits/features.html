@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Features — MeritBits</title>
+<meta name="description" content="Every feature inside MeritBits, the classroom merit tracker by Taksha." />
+<link rel="icon" href="/assets/img/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+
+<header class="nav" id="nav">
+  <a href="/index.html" class="nav-brand">
+    <img src="/assets/img/logo.png" alt="Taksha" class="nav-logo" onerror="this.style.display='none'" />
+    <span class="nav-name">TAKSHA</span>
+  </a>
+  <nav class="nav-links">
+    <a href="/index.html">Home</a>
+    <a href="/products.html" class="active">Products</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="page-header-inner">
+      <span class="page-kicker">// MeritBits · Features</span>
+      <h1 class="page-title">What's <span class="grad-2">inside</span>.</h1>
+      <p class="page-lede">
+        Everything a classroom needs to track behaviour, keep parents informed, and stay transparent.
+      </p>
+    </div>
+  </section>
+
+  <section class="mb-subnav-wrap">
+    <nav class="mb-subnav">
+      <a href="/products/meritbits/index.html">Overview</a>
+      <a href="/products/meritbits/features.html" class="active">Features</a>
+      <a href="/products/meritbits/download.html">Download</a>
+      <a href="/products/meritbits/privacy.html">Privacy</a>
+      <a href="/products/meritbits/terms.html">Terms</a>
+      <a href="/products/meritbits/delete-account.html">Delete Account</a>
+    </nav>
+  </section>
+
+  <section class="mb-content">
+
+    <div class="mb-features">
+      <div class="mb-feature reveal">
+        <div class="mb-feature-icon">◈</div>
+        <h3>Digital Merit balance</h3>
+        <p>Every student has a live merit value that starts at 5000. Negative balances are shown in red and carry into the next reset — no quiet floor, no fudging.</p>
+      </div>
+
+      <div class="mb-feature reveal">
+        <div class="mb-feature-icon">◆</div>
+        <h3>One-tap deductions</h3>
+        <p>Teachers pick an infraction from the deduction table, confirm, and points are subtracted instantly. History is written automatically with reason and timestamp.</p>
+      </div>
+
+      <div class="mb-feature reveal">
+        <div class="mb-feature-icon">◇</div>
+        <h3>Full history log</h3>
+        <p>Every change is saved. View as a list or as a graph. History entries cannot be edited once written — what's recorded is what stays.</p>
+      </div>
+
+      <div class="mb-feature reveal">
+        <div class="mb-feature-icon">⬡</div>
+        <h3>Parent view with notifications</h3>
+        <p>Parents see their child's merit out of 5000, progress bar, and history. When merit changes or a new thought is posted, a local notification appears on the phone — while the app is open almost immediately, and via periodic background checks otherwise.</p>
+      </div>
+
+      <div class="mb-feature reveal">
+        <div class="mb-feature-icon">⬢</div>
+        <h3>QR-based linking</h3>
+        <p>Each student has a private QR. A parent scans it once to link the child. The QR can be rotated at any time, and old codes stop working immediately.</p>
+      </div>
+
+      <div class="mb-feature reveal">
+        <div class="mb-feature-icon">✧</div>
+        <h3>Thoughts feed</h3>
+        <p>Teachers post short messages (up to 500 characters) to a class. Parents read them. Admins moderate. A quiet channel between classroom and home.</p>
+      </div>
+    </div>
+
+    <div class="mb-block reveal">
+      <div class="mb-block-label">Also inside</div>
+      <h2>Smaller things that matter.</h2>
+      <ul class="about-list">
+        <li><strong>Class &amp; subject teachers</strong> — separate permissions with a 6-character join code</li>
+        <li><strong>Bulk student add</strong> — paste a list, invalid lines are flagged individually</li>
+        <li><strong>Admin panel</strong> — approve or reject teacher requests, moderate thoughts</li>
+        <li><strong>Themes</strong> — Dark, Royal (nine backgrounds + nine accents), and Soft Light</li>
+        <li><strong>Offline documentation</strong> — the Beta and 1.0 PDF guides bundle inside the app</li>
+        <li><strong>Email verification</strong> and admin approval for teachers, enforced for new accounts</li>
+        <li><strong>Offline banner</strong> — a red bar when the device has no connection</li>
+      </ul>
+    </div>
+
+    <div class="mb-block reveal">
+      <div class="mb-block-label">Data &amp; safety</div>
+      <h2>Locked down by rules.</h2>
+      <p>
+        Database access is enforced on the server. Teachers can only read students in their own classes.
+        Parents can only read linked children. Merit writes are restricted to the right roles — subject
+        teachers can lower merit but never raise it. History entries are immutable.
+      </p>
+      <p>
+        Firebase App Check with Play Integrity protects the database from non-genuine apps. No analytics,
+        no crash reporting, no ads. Notifications are local to the device.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="cta-strip">
+    <div class="cta-inner">
+      <h2>Read the fine print.</h2>
+      <p>Privacy, terms, and account deletion are all one click away.</p>
+      <div class="mb-cta-buttons">
+        <a href="/products/meritbits/privacy.html" class="btn btn-primary">
+          <span>Privacy policy</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="/products/meritbits/download.html" class="btn btn-ghost">Download info</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/assets/img/logo.png" alt="Taksha" onerror="this.style.display='none'" />
+      <span>TAKSHA</span>
+    </div>
+    <div class="footer-links">
+      <a href="/index.html">Home</a>
+      <a href="/products.html">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Taksha. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

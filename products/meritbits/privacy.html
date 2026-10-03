@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — MeritBits</title>
+<meta name="description" content="Privacy Policy for MeritBits, the classroom merit tracker by Taksha." />
+<link rel="icon" href="/assets/img/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+
+<header class="nav" id="nav">
+  <a href="/index.html" class="nav-brand">
+    <img src="/assets/img/logo.png" alt="Taksha" class="nav-logo" onerror="this.style.display='none'" />
+    <span class="nav-name">TAKSHA</span>
+  </a>
+  <nav class="nav-links">
+    <a href="/index.html">Home</a>
+    <a href="/products.html" class="active">Products</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="page-header-inner">
+      <span class="page-kicker">// MeritBits · Legal</span>
+      <h1 class="page-title">Privacy <span class="grad-2">Policy</span></h1>
+      <p class="page-lede">Effective and last updated: October 3, 2026</p>
+    </div>
+  </section>
+
+  <section class="mb-subnav-wrap">
+    <nav class="mb-subnav">
+      <a href="/products/meritbits/index.html">Overview</a>
+      <a href="/products/meritbits/features.html">Features</a>
+      <a href="/products/meritbits/download.html">Download</a>
+      <a href="/products/meritbits/privacy.html" class="active">Privacy</a>
+      <a href="/products/meritbits/terms.html">Terms</a>
+      <a href="/products/meritbits/delete-account.html">Delete Account</a>
+    </nav>
+  </section>
+
+  <article class="legal">
+
+    <p class="legal-intro">
+      MeritBits is a classroom credit and behaviour-tracking app published by <strong>Taksha</strong>.
+      This policy explains what data the app collects, why, how it is stored, and the choices you have.
+      It applies to the MeritBits Android application (<span class="mono">com.taksha.meritbits</span>)
+      and to the website at <a href="https://taksha.pro">taksha.pro</a>.
+    </p>
+
+    <h2>1. Who can use MeritBits</h2>
+    <p>
+      MeritBits is designed for <strong>teachers and parents</strong>. Accounts may only be created by
+      people aged <strong>18 or older</strong>. The app does not knowingly allow users under 18 to
+      register. Students do not create accounts, do not log in, and do not interact with the app
+      directly. Student data is entered by teachers for classroom tracking purposes.
+    </p>
+    <p>
+      If you believe someone under 18 has created an account, contact us at
+      <a href="mailto:zirconium4.1@gmail.com">zirconium4.1@gmail.com</a> and we will remove it.
+    </p>
+
+    <h2>2. What we collect</h2>
+    <p>MeritBits collects the minimum data needed to run a classroom merit system.</p>
+
+    <h3>Account data (teachers and parents)</h3>
+    <ul>
+      <li>Your <strong>name</strong>, as entered at registration</li>
+      <li>Your <strong>email address</strong>, used for login, verification, and password reset</li>
+      <li>A hashed <strong>password</strong> (we never see the plain password)</li>
+      <li>Your <strong>role</strong> (Teacher or Parent) and, for teachers, your <strong>approval status</strong></li>
+      <li>For parents: an internal list of <strong>child IDs</strong> you have linked</li>
+      <li>An optional <strong>profile image</strong> if you choose to upload one</li>
+    </ul>
+
+    <h3>Student data (entered by teachers)</h3>
+    <ul>
+      <li>Student <strong>name</strong></li>
+      <li><strong>Roll number</strong></li>
+      <li>Class the student belongs to</li>
+      <li>Current <strong>merit value</strong></li>
+      <li><strong>History</strong> — each entry contains reason, points, and a server timestamp</li>
+      <li>A private <strong>link code</strong> used inside the student's QR, which can be rotated at any time</li>
+    </ul>
+
+    <h3>Classroom data</h3>
+    <ul>
+      <li>Class name, join code, and list of teachers with their roles</li>
+      <li><strong>Thoughts</strong> posted by teachers — message text, author name, and timestamp</li>
+    </ul>
+
+    <h2>3. What we do not collect</h2>
+    <p>
+      MeritBits contains <strong>no ads, no advertising SDKs, no third-party analytics, and no
+      crash-reporting SDKs</strong>. We do not track your activity across other apps or websites.
+      We do not sell or rent any data.
+    </p>
+    <p>
+      MeritBits uses Firebase Authentication, Firebase Realtime Database, and Firebase App Check
+      (Play Integrity) — Google services necessary for login and database security. See
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's own privacy information</a>
+      for how Google handles authentication.
+    </p>
+
+    <h2>4. Notifications</h2>
+    <p>
+      The app may send local notifications to parents when a child's merit changes or a new thought
+      is posted. Notifications are generated locally on your device — no server-side push service
+      is used. The app performs periodic background checks (approximately every 15 minutes, via
+      Android WorkManager) to look for updates while the app is closed. If the app is open, changes
+      appear almost immediately. Timings may vary under battery saver mode. You can disable
+      notifications at any time in Android settings.
+    </p>
+
+    <h2>5. Where your data is stored</h2>
+    <p>
+      MeritBits stores classroom data in <strong>Firebase Realtime Database, region
+      <span class="mono">asia-southeast1</span> (Singapore)</strong>. Authentication data is handled
+      by Google Firebase Authentication. All communication between the app and Firebase is encrypted
+      in transit (TLS).
+    </p>
+
+    <h2>6. How access is controlled</h2>
+    <ul>
+      <li>Teachers can only read students in classes they belong to.</li>
+      <li>Parents can only read students they have linked via the student's QR code.</li>
+      <li>Subject teachers can lower merit but cannot raise it.</li>
+      <li>Only class teachers can raise merit via the reset action.</li>
+      <li>History entries cannot be edited once written.</li>
+      <li>Firebase App Check with Play Integrity blocks requests from non-genuine app builds.</li>
+    </ul>
+
+    <h2>7. Deleting your account</h2>
+    <p>
+      You can delete your account at any time from <strong>Profile → Delete Account</strong> inside
+      the app. Deletion is <strong>immediate</strong> and requires your password. Full details are on
+      the <a href="/products/meritbits/delete-account.html">Account Deletion page</a>.
+    </p>
+    <p>
+      If you can no longer log in, email <a href="mailto:zirconium4.1@gmail.com">zirconium4.1@gmail.com</a>
+      from the email address associated with your account and we will delete it manually

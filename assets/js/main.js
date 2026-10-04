@@ -84,10 +84,15 @@ animateProgress(document.getElementById('teaseProgress'), 40 + Math.random() * 2
 animateProgress(document.getElementById('mbProgress'), 40 + Math.random() * 25);
 
 // ---------- Scroll reveal ----------
-const revealTargets = document.querySelectorAll(
-  '.principle, .section-title, .cta-inner, .tease-inner, .about-block, .contact-card, .contact-note, .product-card, .products-coming'
-);
-revealTargets.forEach((el) => el.classList.add('reveal'));
+// Auto-add .reveal to common selectors
+const autoRevealSelectors = [
+  '.principle', '.section-title', '.cta-inner', '.tease-inner',
+  '.about-block', '.contact-card', '.contact-note', '.product-card', '.products-coming'
+];
+document.querySelectorAll(autoRevealSelectors.join(',')).forEach((el) => el.classList.add('reveal'));
+
+// Observe EVERYTHING with .reveal in the HTML (this includes .mb-block, .mb-feature, .phone, .mb-role, etc.)
+const revealTargets = document.querySelectorAll('.reveal');
 const revealIO = new IntersectionObserver((entries) => {
   entries.forEach((e) => {
     if (e.isIntersecting) {
@@ -95,8 +100,15 @@ const revealIO = new IntersectionObserver((entries) => {
       revealIO.unobserve(e.target);
     }
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
 revealTargets.forEach((el) => revealIO.observe(el));
+
+// Safety net: force-reveal anything still hidden after 1.5s
+setTimeout(() => {
+  document.querySelectorAll('.reveal:not(.visible)').forEach((el) => {
+    el.classList.add('visible');
+  });
+}, 1500);
 
 // ---------- Parallax cubes ----------
 if (window.matchMedia('(pointer: fine)').matches) {
